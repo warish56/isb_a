@@ -1,0 +1,19 @@
+
+
+
+
+.container {
+    
+}
+.content {
+    position: relative;
+    isolation: isolate;
+}
+
+.back{
+
+    & svg{
+        aspect-ratio: 1/1;
+        overflow: visible;
+    }
+}

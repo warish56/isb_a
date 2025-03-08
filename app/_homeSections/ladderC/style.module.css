@@ -1,0 +1,19 @@
+
+
+.container {
+    /* min-height: 100vh; */
+}
+.content {
+    position: relative;
+    isolation: isolate;
+}
+
+.back{
+    /* position: absolute;
+    inset: 0;
+    z-index: 0; */
+    & svg{
+        aspect-ratio: 1/1;
+        overflow: visible;
+    }
+}
