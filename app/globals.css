@@ -1,10 +1,21 @@
+@layer typography, colors, util;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 
   --color-dark-blue: #3658D3; 
+  --color-accent-green: #41B383; 
+  --color-accent-yellow: #FFEDAF;
+  --color-accent-pink: #FFBABA;
+
+  --color-text-light: #FDFAF5;
+
   --gap-5: 5px;
   --gap-10: 10px;
+  --gap-20: 20px;
+  --gap-30: 30px;
+  --gap-40: 40px;
 }
 
 
@@ -42,6 +53,22 @@ body {
    .dark-blue{
     color: var(--color-dark-blue);
    }
+   .accent-green{
+    color: var(--color-accent-green);
+   }
+   .accent-yellow{
+    color: var(--color-accent-yellow);
+   }
+   .accent-pink{
+    color: var(--color-accent-pink);
+   }
+   .text-light{
+    color: var(--color-text-light);
+   }
+
+   .bg-accent-pink{
+    background-color: var(--color-accent-pink);
+   }
 }
 
 @layer util{
@@ -78,6 +105,16 @@ body {
   .gap-5{
     gap: var(--gap-5);
   }
+  .gap-20{
+    gap: var(--gap-20);
+  }
+  .gap-30{
+    gap: var(--gap-30);
+  }
+  .gap-40{
+    gap: var(--gap-40);
+  }
+
 
 
   .no-margin{
@@ -96,6 +133,150 @@ body {
     text-align: center;
   }
 
+  .bold {
+    font-weight: 700;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .align-center{
+    align-items:center;
+  }
+
+  .grow-1{
+    flex-grow: 1;
+  }
+
+  .shrink-0{
+    flex-shrink: 0;
+  }
+
+  .basis-0{
+    flex-basis: 0;
+  }
+
+  .order-1{
+    order:1
+  }
+
+  .order-2{
+    order:2
+  }
+
+  .full-width{
+    width: 100%;
+  }
+
+}
+
+@layer typography{
+
+  .text-heading-wow{
+    font-size: 30px;
+    font-weight: 900;
+  
+    @media (min-width:700px){
+      font-size: 40px;
+    }
+  
+    @media (min-width:1000px){
+      font-size: 100px;
+    }
+  }
+  
+  .text-heading-1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+  
+    @media (min-width:700px){
+      font-size: 35px;
+    }
+  
+    @media (min-width:1000px){
+      font-size: 54px;
+    }
+  
+  
+  }
+  
+  .text-heading-2{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 44px;
+  
+    @media (min-width:700px){
+      font-size: 25px;
+    }
+  
+    @media (min-width:1400px){
+      font-size: 40px;
+    }
+  }
+
+  
+  
+  
+  .text-heading-4{
+    font-size: 13px;
+    font-weight: 500;
+  
+    @media (min-width:700px){
+      font-size: 16px;
+    }
+  
+    @media (min-width:1400px){
+      font-size: 20px;
+    }
+  }
+  
+  
+  .text-btn-large{
+    font-size: 15px;
+    font-weight: 500;
+
+    @media (min-width:1000px){
+      font-size: 20px;
+    }
+  }
+
+  .text-btn-medium{
+    font-size: 10px;
+    font-weight: 500;
+    
+    @media (min-width:1000px){
+      font-size: 15px;
+    }
+  }
+  
+  .text-body-1{
+    font-size: 14px;
+    font-weight: 400;
+  
+   
+  
+    @media (min-width:1000px){
+      font-size: 18px;
+    }
+  
+  }
+  
+  .text-body-2{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+  
+    @media (min-width:700px){
+      font-size: 18px;
+      line-height: 32px;
+    }
+  
+    @media (min-width:1000px){
+      font-size: 24px;
+    }
+  }
 
 }
 
@@ -117,76 +298,3 @@ body {
   grid-column: main-start/main-end;
 }
 
-.text-heading-wow{
-  font-size: 30px;
-  font-weight: 900;
-
-  @media (min-width:700px){
-    font-size: 40px;
-  }
-
-  @media (min-width:1000px){
-    font-size: 100px;
-  }
-}
-
-.text-heading-1{
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 20px;
-
-  @media (min-width:700px){
-    font-size: 35px;
-  }
-
-  @media (min-width:1000px){
-    font-size: 54px;
-  }
-
-
-}
-
-.text-heading-2{
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 44px;
-
-  @media (min-width:700px){
-    font-size: 25px;
-  }
-
-  @media (min-width:1400px){
-    font-size: 40px;
-  }
-}
-
-.text-btn-large{
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.text-body-1{
-  font-size: 14px;
-  font-weight: 400;
-
- 
-
-  @media (min-width:1000px){
-    font-size: 18px;
-  }
-
-}
-
-.text-body-2{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 32px;
-
-  @media (min-width:700px){
-    font-size: 18px;
-  }
-
-  @media (min-width:1000px){
-    font-size: 24px;
-  }
-}

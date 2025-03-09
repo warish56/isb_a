@@ -8,12 +8,56 @@
     isolation: isolate;
 }
 
+
 .back{
-    /* position: absolute;
-    inset: 0;
-    z-index: 0; */
     & svg{
         aspect-ratio: 1/1;
         overflow: visible;
+    }
+}
+
+.plan_content_cont{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 10%;
+    width: min(80%, 800px);
+
+}
+
+.plan_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+}
+
+.circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    @media(min-width: 700px){
+        width: 18px;
+        height: 18px;
+    }
+    @media(min-width: 1400px){
+        width: 30px;
+        height: 30px;
+    }
+}
+.long_ladder{
+    display: block;
+    @media(min-width: 700px){
+        display: none;
+    }
+}
+
+.calendar_icon{
+    width: 200px;
+
+    @media(min-width: 700px){
+        width: 300px;
+    }
+    @media(min-width: 1400px){
+        width: 400px;
     }
 }

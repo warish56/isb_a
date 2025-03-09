@@ -8,11 +8,76 @@
 }
 
 .back{
-    /* position: absolute;
-    inset: 0;
-    z-index: 0; */
     & svg{
         aspect-ratio: 1/1;
         overflow: visible;
     }
 }
+
+
+
+.plan_content_cont{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: -40%;
+    width: min(80%, 1040px);
+
+}
+
+.plan_content{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    justify-content: center;
+
+    @media (min-width: 1000px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    }
+
+    @media (min-width: 1400px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+        justify-items: center;
+    }
+}
+
+.first_web{
+    order: 2;
+    @media (min-width: 1000px) {
+        order: 1;
+    }
+}
+
+.second_web{
+    order: 1;
+    @media (min-width: 1000px) {
+        order: 2;
+    }
+}
+
+
+.long_ladder{
+    display: block;
+    @media(min-width: 700px){
+        display: none;
+    }
+}
+
+
+.comapny_name{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:2px black solid;
+
+    @media(min-width: 700px){
+        width: 40px;
+        height: 40px;
+    }
+
+    @media(min-width: 1400px){
+        width: 60px;
+        height: 60px;
+    }
+}
+

@@ -1,0 +1,86 @@
+
+
+.container {
+}
+.content {
+    position: relative;
+    isolation: isolate;
+    align-items: center;
+    justify-content: center;
+    top: -40%;
+}
+
+.back{
+    & svg{
+        aspect-ratio: 1/1;
+        overflow: visible;
+    }
+}
+
+
+.content_item{
+    gap: 50px;
+    width: min(100%, 500px);
+    align-items: center;
+
+    @media (min-width:1000px) {
+        width: min(100%, 800px);
+    }
+
+
+    & .text-heading-1{
+        line-height: normal;
+    }
+
+}
+
+.normal_line_height{
+    line-height: normal;
+}
+
+.pricing_banner{
+    width: 100%;
+    padding: 20px;
+    @media (min-width:1000px) {
+        padding: 40px;
+    }
+
+    & span{
+        font-weight: 800;
+    }
+
+    & button {
+        cursor: pointer;
+        border-radius: 100px;
+        padding: 10px 40px;
+        min-width: 300px;
+        background-color: var(--color-accent-yellow);
+        width: fit-content;
+    }
+}
+
+
+.pricing_features{
+    width: 100%;
+    padding: 50px;
+    padding-inline: 20px;
+    background-color: #F2F2F2;
+
+    @media (min-width:700px) {
+        padding-inline: 30px;
+    }
+
+    @media (min-width:1000px) {
+        padding-inline: 50px;
+    }
+    @media (min-width:1400px) {
+        padding-inline: 100px;
+    }
+}
+
+.features_cont{
+    border-bottom: 1px #000 solid;
+    padding-bottom: 40px;
+
+}
+

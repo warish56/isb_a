@@ -2,15 +2,63 @@
 import styles from './style.module.css';
 
 import LadderSvg from '../assets/ladder/third.svg'
+import LadderLongSvg from '../assets/ladder/long.svg'
+
+import NovemberSvg from '../assets/calendar/nov.svg'
 
 
+type PlanItemProps = {
+    title: string;
+    color: string;
+}
+const PlanItem = ({title, color}:PlanItemProps) => {
+    return (
+        <div className='row gap-5 grow-1 shrink-0 align-center basis-0'>
+            <div className={styles.circle} style={{backgroundColor: color}}/>
+            <span className='text-heading-4'>{title}</span>
+        </div>
+    )
+}
+
+
+const Plan = ()=> {
+    return (
+        <div className={styles.plan_content}>
+            <div className='column gap-10 space-between'>
+                <h3 className='text-heading-2 accent-green'>Game Plan</h3>
+                <span className='text-body-2'>40+ hours of live mentorship, hands-on projects,  and doubt-solving sessions designed to help you compete with topic experts!</span>
+                <span className='text-body-2'>Hover to unlock your weekly skill-boost! Each color = a new horizon to conquer.</span>
+                <span className='text-body-2 bold'> Test your hover skills here(spoiler: it’s the easiest challenge you’ll face all day)👉</span>
+            </div>
+            <div className='column gap-10'>
+                <div className={styles.calendar_icon}>
+                    <NovemberSvg />
+                </div>
+                <div className='row gap-10 space-between'>
+                    <PlanItem color='#FFEDAF' title='SaaS' />
+                    <PlanItem color='#41B383' title='Cybersecurity' />
+                </div>
+                <div className='row gap-10 '>
+                    <PlanItem color='#FFBABA' title='Deep Learning' />
+                    <PlanItem color='#619BF7' title='IoT' />
+                </div>
+            </div>
+        </div>
+    )
+}
 
 export const LadderC = () => {
     return (
         <section className={`${styles.container} body-wrapper`}>
             <div className={`${styles.content} body-wrapper-content`}>
                 <div className={styles.back}>
+                    <div className={styles.long_ladder}>
+                        <LadderLongSvg/>
+                    </div>
                     <LadderSvg/>
+                </div>
+                <div className={styles.plan_content_cont}>
+                    <Plan/>
                 </div>
             </div>
         </section>

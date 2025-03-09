@@ -8,6 +8,7 @@ import { LadderD } from "./_homeSections/ladderD";
 import { LadderE } from "./_homeSections/ladderE";
 import { LadderF } from "./_homeSections/ladderF";
 import { LadderG } from "./_homeSections/ladderG";
+import { Pricing } from "./_homeSections/Pricing";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <LadderE />
         <LadderF />
         <LadderG />
+        <Pricing />
       </main>
     </div>
   );
