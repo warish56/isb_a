@@ -1,0 +1,60 @@
+
+
+.container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 30px 0;
+  background-color: white;
+}
+
+
+.content {
+
+}
+
+
+.brand_logo{
+  & svg {
+    width: 48px;
+    height: 35px;
+  }
+  @media (min-width: 700px) {
+    width: 65px;
+    height: 48px;
+  }
+}
+
+.link_grp{
+  border-radius: 100px;
+  padding: 5px 10px;
+  display: none;
+  @media (min-width: 700px) {
+    display: flex;
+  }
+
+}
+
+.link{
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+}
+
+.link_active_btn{
+  background-color: var(--color-accent-blue);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 100px;
+}
+
+.register_btn{
+  border: none;
+  background-color: var(--color-accent-blue);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 100px;
+}

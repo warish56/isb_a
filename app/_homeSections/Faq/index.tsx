@@ -9,10 +9,10 @@ export const Faq = () => {
         <section className={`${styles.container} body-wrapper`}>
             <div className={`body-wrapper-content column`}>
                     <div className='column gap-20'>
-                        <div className='row gap-10 align-center space-between'>
+                        <div className='row gap-20 align-center space-between'>
                             <span className='text-heading-wow-2'>FAQs</span>
                             <div className={`${styles.divider}`} />
-                            <span className='text-heading-4'>
+                            <span className={`${styles.heading_text} text-heading-4`}>
                                 Find answers to common questions about our registration, schedule, admissions, and more.
                             </span>
                         </div>

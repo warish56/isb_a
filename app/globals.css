@@ -5,7 +5,8 @@
   --foreground: #171717;
 
   --color-dark-blue: #3658D3; 
-  --color-accent-green: #41B383; 
+  --color-accent-green: #41B383;
+  --color-accent-blue: #619BF7;  
   --color-accent-yellow: #FFEDAF;
   --color-accent-pink: #FFBABA;
   --color-bg-gray: #F2F2F2;
@@ -38,8 +39,8 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  height: 100dvh;
+  overflow: scroll;
   font-family: 'Heavywow', sans-serif;
 }
 
@@ -63,6 +64,11 @@ body {
    .accent-pink{
     color: var(--color-accent-pink);
    }
+
+   .accent-blue{
+    color: var(--color-accent-blue);
+   }
+
    .text-light{
     color: var(--color-text-light);
    }
@@ -182,6 +188,13 @@ body {
 
   .pi-20{
     padding-inline: 20px;
+  }
+
+  .Header_svg__hide_mobile{
+    display: none;
+    @media (min-width:700px){
+      display: unset;
+    }
   }
 
 }

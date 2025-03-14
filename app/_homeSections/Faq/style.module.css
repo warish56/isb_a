@@ -3,3 +3,13 @@
 .container {
     padding-bottom: 100px;
 }
+
+.heading_text{
+    max-width: min(50%, 300px);
+}
+
+.divider{
+    flex-grow: 1;
+    height: 5px;
+    background-color: #000;
+}

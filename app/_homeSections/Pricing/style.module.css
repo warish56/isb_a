@@ -53,9 +53,13 @@
         cursor: pointer;
         border-radius: 100px;
         padding: 10px 40px;
-        min-width: 300px;
+        
         background-color: var(--color-accent-yellow);
         width: fit-content;
+
+        @media (min-width:700px) {
+            min-width: 300px;
+        }
     }
 }
 
