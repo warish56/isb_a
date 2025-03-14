@@ -1,0 +1,19 @@
+
+.container{
+    padding: 20px;
+    border-radius: 10px;
+    transition: height 0.3s ease-in;
+
+    @media (min-width:1000px) {
+        padding: 40px;
+    }
+    
+}
+
+.expand_btn{
+    border: none;
+    width: 35px;
+    height: 35px;
+    background-color:  transparent;
+    cursor: pointer;
+}

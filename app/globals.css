@@ -8,8 +8,10 @@
   --color-accent-green: #41B383; 
   --color-accent-yellow: #FFEDAF;
   --color-accent-pink: #FFBABA;
+  --color-bg-gray: #F2F2F2;
 
   --color-text-light: #FDFAF5;
+  --color-text-gray: #A8A8A8;
 
   --gap-5: 5px;
   --gap-10: 10px;
@@ -44,7 +46,6 @@ body {
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
 }
 
@@ -65,9 +66,15 @@ body {
    .text-light{
     color: var(--color-text-light);
    }
+   .text-gray{
+    color: var(--color-text-gray);
+   }
 
    .bg-accent-pink{
     background-color: var(--color-accent-pink);
+   }
+   .bg-gray{
+    background-color: var(--color-bg-gray);
    }
 }
 
@@ -169,6 +176,14 @@ body {
     width: 100%;
   }
 
+  .pb-20{
+    padding-block: 20px;
+  }
+
+  .pi-20{
+    padding-inline: 20px;
+  }
+
 }
 
 @layer typography{
@@ -185,6 +200,20 @@ body {
       font-size: 100px;
     }
   }
+
+  .text-heading-wow-2{
+    font-size: 30px;
+    font-weight: 500;
+  
+    @media (min-width:700px){
+      font-size: 40px;
+    }
+  
+    @media (min-width:1000px){
+      font-size: 70px;
+    }
+  }
+
   
   .text-heading-1{
     font-size: 25px;
@@ -275,6 +304,13 @@ body {
   
     @media (min-width:1000px){
       font-size: 24px;
+    }
+  }
+
+  .caption {
+    font-size: 10px;
+    @media (min-width:1000px){
+      font-size: 14px;
     }
   }
 
