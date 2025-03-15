@@ -23,6 +23,10 @@
     top: -40%;
     width: min(80%, 1040px);
 
+    @media(min-width: 700px){
+        top: 2%;
+    }
+
 }
 
 .plan_content{

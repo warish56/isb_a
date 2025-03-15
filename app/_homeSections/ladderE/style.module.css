@@ -20,8 +20,12 @@
     position: absolute;
     z-index: 1;
     right: 0;
-    top: 0%;
+    top: 20%;
     width: min(80%, 1040px);
+
+    @media(min-width: 700px){
+        top: 40%;
+    }
 
 }
 
@@ -79,5 +83,9 @@
 
 .board_item{
     border-radius: 100px;
-    padding: 10px  15px;
+    padding: 0px  15px;
+
+    @media (min-width: 1400px) {
+        padding: 10px  15px;
+    }
 }

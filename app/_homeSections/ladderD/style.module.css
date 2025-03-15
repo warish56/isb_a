@@ -19,14 +19,18 @@
     position: absolute;
     z-index: 1;
     left: 0;
-    top: 20%;
+    top: 30%;
     width: min(80%, 840px);
+
+    @media(min-width: 700px){
+        top: 50%;
+    }
 
 }
 
 .plan_content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     @media (min-width: 1000px) {
         justify-items: center;

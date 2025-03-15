@@ -14,8 +14,6 @@
 }
 
 .register_btn{
-    background-color: black;
-    color: white;
     border-radius: 100px;
     border: none;
     width: fit-content;
@@ -26,41 +24,39 @@
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
-
-    --bg-color-1:#619BF766;
-    --bg-color-2:#FFEDAF99;
-    --bg-color-3:#FFBABA99;
 }
 
 .topic {
     flex-grow: 1;
-    flex-basis: 171px;
+    flex-shrink: 0;
+    flex-basis: 0;
     border-radius: 10px;
     gap: 20px;
     padding: 20px;
     justify-content: space-between;
+    align-items: stretch;
+
+    @media (min-width:700px){
+        min-height: 247px;
+    }
+
+    
 }
 
 .topic_1{
-    background-color: var(--bg-color-1);
+    background-color: var(--color-accent-light-blue);
 }
 .topic_2{
-    background-color: var(--bg-color-2);
+    background-color: var(--color-accent-light-yellow);
 }
 .topic_3{
-    background-color: var(--bg-color-3);
+    background-color: var(--color-accent-light-pink);
 }
 
 .topic_title{
     display: flex;
     gap: 5px;
-    max-width: 220px;
     align-items: flex-start;
-}
-
-.topic_title.topic_title  span.text-heading-wow{
-    line-height: 1px;
-    color: red;
 }
 
 .topic_btn{
@@ -68,5 +64,4 @@
     background-color: #FFFFFF99;
     width: fit-content;
     padding: 5px 20px;
-
 }

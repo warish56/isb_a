@@ -11,7 +11,7 @@ const BoardLink = ({url, text, icon, classNames}:{text:string, url:string, icon:
     return (
         <div className={`${styles.link_item} row align-center gap-10`}>
             <span className={`${styles.link_icon}`}>{icon}</span>
-            <a href={url} target='_blank' className={`text-heading-2 ${classNames}`}>{text}</a>
+            <a href={url} target='_blank' className={`text-head-3 ${classNames}`}>{text}</a>
         </div>
     )
 }
@@ -20,9 +20,9 @@ const Plan = ()=> {
     return (
         <div className={`${styles.plan_content} gap-10`}>
             <div className={`${styles.first_web} column space-between`}>
-                <h3 className='text-heading-2 accent-green'>Bridge to Opportunity</h3>
-                <span className='text-body-2'>Connect with industry leaders, mentors, and peers who shape the future of tech. Exchange ideas, gain insights, and turn conversations into career opportunities.</span>
-                <span className='text-body-2 bold'>Your next breakthrough begins with ‘Hello.’</span>
+                <h3 className='accent-green text-head-5 uppercase'>Bridge to Opportunity</h3>
+                <span className='text-body-1 color-text-primary'>Connect with industry leaders, mentors, and peers who shape the future of tech. Exchange ideas, gain insights, and turn conversations into career opportunities.</span>
+                <span className='text-body-2 color-text-primary'>Your next breakthrough begins with ‘Hello.’</span>
             </div>
             <div className={`${styles.second_web} column gap-10`}>
                 <div className={`${styles.link_board} column gap-10`}>

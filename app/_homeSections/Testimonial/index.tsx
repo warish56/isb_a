@@ -18,14 +18,14 @@ const Feedback = ({description, userName, avatarUrl, bgColor}:props) => {
     return (
         <div className={`${styles.content_item} ${styles.feedback_cont} column gap-20`}>
             <div style={{backgroundColor: bgColor}} className={`${styles.feedback_message}`}>
-                <span className='text-body-2'>{description}</span>
+                <span className='text-body-1 color-text-primary'>{description}</span>
             </div>
             <div className='row gap-10'>
                 <div className={`${styles.avatar} row center`}>
                     <img alt="user" src={avatarUrl}/>
                 </div>
                 <div className='column gap-10'>
-                    <span className='text-heading-4'>{userName}</span>
+                    <span className='text-body-2 color-text-primary'>{userName}</span>
                     <div className={`${styles.social_cont} row gap-10 align-center`}>
                         <LinkedInSvg />
                         <GithubSvg />
@@ -42,7 +42,9 @@ export const Testimonial = () => {
         <section className={`${styles.container} column`}>
             <div className={`body-wrapper`}>
                 <div className={`body-wrapper-content column`}>
-                    <HeadingSvg />
+                    <div className={`${styles.heading} row align-center bg-accent-pink `}>
+                        <span className='text-head-3 color-text-primary'>India’s Super Brain Experience</span>
+                    </div>
                 </div>
             </div>
 

@@ -47,7 +47,7 @@ export const Accordian = ({title, children}:props) => {
         }} 
         className={`${styles.container} column gap-10 bg-gray`}>
             <div className={`row align-center space-between`}>
-                <span className='text-heading-4'>{title}</span>
+                <span className='text-body-1 color-text-primary'>{title}</span>
                 <button onClick={toggleVisible} className={`${styles.expand_btn} row-center`}>
                     <PlusSvg />
                 </button>

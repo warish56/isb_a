@@ -11,9 +11,9 @@ const Company = ({name}:CompanyProps) => {
     return (
         <div className='row align-center gap-10'>
             <div className={`${styles.comapny_name} row-center`}>
-                <span className='text-heading-4'>{name.charAt(0).toUpperCase()}</span>
+                <span className='text-head-6'>{name.charAt(0).toUpperCase()}</span>
             </div>
-            <span className='text-heading-2'>{name}</span>
+            <span className='text-head-3 color-text-primary'>{name}</span>
         </div>
     )
 }
@@ -22,9 +22,9 @@ const Plan = ()=> {
     return (
         <div className={`${styles.plan_content} gap-10`}>
             <div className={` gap-30 column space-between`}>
-                <h3 className='text-heading-2 accent-green'>The Hiring Auction</h3>
-                <span className='text-body-2'>Step into the spotlight and let companies compete for your skills. Showcase your projects, pitch your potential, and prove your expertise under pressure. Watch the bids roll in – real-time offers reflect your true value..</span>
-                <span className='text-body-2 bold'>No resumes – just results</span>
+                <h3 className='accent-green text-head-5 uppercase'>The Hiring Auction</h3>
+                <span className='text-body-1 color-text-primary'>Step into the spotlight and let companies compete for your skills. Showcase your projects, pitch your potential, and prove your expertise under pressure. Watch the bids roll in – real-time offers reflect your true value..</span>
+                <span className='text-body-2 color-text-primary'>No resumes – just results</span>
             </div>
             <div className={` column gap-10`}>
                 <div className={`${styles.company_list} column gap-10`}>

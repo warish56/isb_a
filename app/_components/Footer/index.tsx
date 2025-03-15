@@ -17,9 +17,9 @@ export const Footer = () => {
                         <div className={` ${styles.content} column`}>
 
                             <div className='column gap-20'>
-                                <span className='text-heading-wow-2'>Questions?</span>
-                                <span className='text-body-1'>Do you love what we do and want to help use revolutionize ----</span>
-                                <span className='text-heading-2'>Get in touch</span>
+                                <span className='text-head-2 color-text-primary'>Questions?</span>
+                                <span className='text-body-1 color-text-primary'>Do you love what we do and want to help use revolutionize ----</span>
+                                <span className='text-head-3 color-text-primary'>Get in touch</span>
                             </div>
 
 
@@ -32,13 +32,13 @@ export const Footer = () => {
                             </div>
                         </div>
 
-                        <div className='pb-20 row align-center space-between wrap'>
+                        <div className='pb-20 row align-center space-between wrap gap-10'>
                                 <div className='row gap-10 align-center'>
-                                    <span className='text-gray caption'>Terms & Conditions</span>
-                                    <span className='text-gray caption'>Privacy Policy</span>
-                                    <span className='text-gray caption'>2025 © by India’s Super Brain</span>
+                                    <span className='text-body-4 color-text-tertiary'>Terms & Conditions</span>
+                                    <span className='text-body-4 color-text-tertiary'>Privacy Policy</span>
+                                    <span className='text-body-4 color-text-tertiary'>2025 © by India’s Super Brain</span>
                                 </div>
-                                <span className='text-body-1'>An Alien Brains Initiative</span>
+                                <span className='text-body-3 color-text-primary'>An Alien Brains Initiative</span>
                         </div>
                 </div>
             </div>

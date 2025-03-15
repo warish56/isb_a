@@ -16,12 +16,12 @@ export const Navbar = () => {
                     </div>
 
                     <div className={` ${styles.link_grp} row align-center gap-10 bg-gray`}>
-                        <a className={`${styles.link} ${styles.link_active_btn}`}>Our Vision</a>
-                        <a className={`${styles.link}`}>Awards</a>
-                        <a className={`${styles.link}`}>FAQs</a>
+                        <a className={`${styles.link} ${styles.link_active_btn} text-menu color-text-primary`}>Our Vision</a>
+                        <a className={`${styles.link} text-menu color-text-primary`}>Awards</a>
+                        <a className={`${styles.link} text-menu color-text-primary`}>FAQs</a>
                     </div>
 
-                    <button className={`${styles.register_btn}`}>
+                    <button className={`${styles.register_btn} text-menu-button color-text-secondary`}>
                         Register Now
                     </button>
                 </div>

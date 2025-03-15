@@ -20,20 +20,27 @@
     position: absolute;
     z-index: 1;
     right: 0;
-    top: 10%;
-    width: min(80%, 800px);
+    bottom: 0%;
+    width: min(80%, 822px);
+
+    @media(min-width: 700px){
+        bottom: -10%;
+    }
+
 
 }
 
 .plan_content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .circle{
     width: 16px;
     height: 16px;
     border-radius: 50%;
+    flex-shrink: 0;
 
     @media(min-width: 700px){
         width: 18px;

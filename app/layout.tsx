@@ -1,18 +1,49 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { Footer } from "./_components/Footer";
 import { Navbar } from "./_components/NavBar";
+import localFont from 'next/font/local'
+import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// Font files can be colocated inside the app directory
+const HeyWow = localFont({
+  src: [
+    {
+      path: '../public/fonts/HeyWowExtraBold.ttf',
+      weight: '900',
+    },
+    {
+      path: '../public/fonts/HeyWowSemiBold.ttf',
+      weight: '800',
+    },
+    {
+      path: '../public/fonts/HeyWowBold.ttf',
+      weight: '700',
+    },
+    {
+      path: '../public/fonts/HeyWowHeavy.ttf',
+      weight: '600',
+    },
+    {
+      path: '../public/fonts/HeyWowMedium.ttf',
+      weight: '500',
+    },
+    {
+      path: '../public/fonts/HeyWowRegular.ttf',
+      weight: '400',
+    },
+    {
+      path: '../public/fonts/HeyWowLight.ttf',
+      weight: '300',
+    },
+    {
+      path: '../public/fonts/HeyWowRegular.ttf',
+      weight: '400',
+    },
+  ],
+  display: 'swap',
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${HeyWow.className}`}>
         <Navbar/>
         {children}
         <Footer />
