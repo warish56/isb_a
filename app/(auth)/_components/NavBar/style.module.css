@@ -5,9 +5,13 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
   padding: 30px 0;
   background-color: transparent;
+}
+
+.content{
+  justify-content: space-between;
 }
 
 

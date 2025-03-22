@@ -6,7 +6,7 @@
     border-radius: 10px;
 
     &:focus-within{
-        outline: 5apx white solid;
+        outline: 5px white solid;
     }
     
 }

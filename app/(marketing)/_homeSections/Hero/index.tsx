@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import { RegisterButton } from '../../_components/Buttons/Register';
 import styles from './style.module.css';
 
@@ -42,7 +43,10 @@ export const HeroSection = () => {
 
                         <div className={`${styles.child_2} gap-10 column-center`}>
                             <span className="text-body-1 color-text-primary">The challenge is now open!</span>
-                            <RegisterButton />
+                            <Link href="/signup">
+                                <RegisterButton />
+                            </Link>
+                            
                         </div>
                         
                     </div>

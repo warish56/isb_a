@@ -1,0 +1,27 @@
+
+.container {
+    min-height: 100dvh;
+}
+
+.left{
+    display: none;
+    background-color: #9FD8C04D;
+    @media (min-width: 1400px) {
+        display: flex;
+    }
+}
+
+.form_head_mobile{
+    display: flex;
+    @media (min-width: 1400px) {
+        display: none;
+    }
+}
+
+.form_head{
+    text-align: center;
+
+    @media (min-width: 1400px) {
+        text-align: left;
+    }
+}

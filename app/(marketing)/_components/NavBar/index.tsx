@@ -1,13 +1,21 @@
+'use client';
 
 import Link from 'next/link';
 
 import BrandSvg from './assets/brand.svg'
 
 import styles from './style.module.css';
+import { usePathname } from 'next/navigation';
 
 
 
 export const Navbar = () => {
+    const pathName = usePathname();
+
+    const getActiveClass = (path:string) => {
+        return pathName === path ? styles.link_active_btn : ''
+    }
+
     return (
         <nav className={`${styles.container} body-wrapper`}>
             <div className={`body-wrapper-content column`}>
@@ -20,9 +28,9 @@ export const Navbar = () => {
                     </div>
 
                     <div className={` ${styles.link_grp} row align-center gap-10 bg-gray`}>
-                        <Link href="/vision" className={`${styles.link} ${styles.link_active_btn} text-menu color-text-primary`}>Our Vision</Link>
-                        <a className={`${styles.link} text-menu color-text-primary`}>Awards</a>
-                        <a className={`${styles.link} text-menu color-text-primary`}>FAQs</a>
+                        <Link href="/vision" className={`${styles.link} ${getActiveClass('/vision')} text-menu color-text-primary`}>Our Vision</Link>
+                        <Link href="/awards"className={`${styles.link} ${getActiveClass('/awards')} text-menu color-text-primary`}>Awards</Link>
+                        <Link href="#faq" className={`${styles.link} ${getActiveClass('/faq')}text-menu color-text-primary`}>FAQs</Link>
                     </div>
 
                     <Link href="/login">

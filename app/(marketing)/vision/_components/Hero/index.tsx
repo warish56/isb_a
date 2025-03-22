@@ -1,6 +1,7 @@
 
 import { RegisterButton } from '@/app/(marketing)/_components/Buttons/Register'
 import styles from './style.module.css'
+import Link from 'next/link'
 
 export const Hero = () => {
     
@@ -12,7 +13,9 @@ export const Hero = () => {
                     <span className='text-head-3 color-text-primary'>Empowering the Journey of Innovation</span>
                     <span className='text-body-1 color-text-primary'>It’s not about the destination, it’s about the journey!</span>
                 </div>
-                <RegisterButton />
+                <Link href="/signup">
+                    <RegisterButton />
+                </Link>
             </div>
         </section>
     )

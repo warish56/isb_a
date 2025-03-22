@@ -146,6 +146,9 @@
    .bg-accent-pink{
     background-color: var(--color-accent-pink);
    }
+   .bg-accent-green{
+    background-color: var(--color-accent-green);
+   }
    .bg-accent-yellow{
     background-color: var(--color-accent-yellow);
    }

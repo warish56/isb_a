@@ -6,7 +6,7 @@ import { Accordian } from './_components/Accordian';
 
 export const Faq = () => {
     return (
-        <section className={`${styles.container} body-wrapper`}>
+        <section id="faq" className={`${styles.container} body-wrapper`}>
             <div className={`body-wrapper-content column`}>
                     <div className='column gap-20'>
                         <div className='row gap-20 align-center space-between'>
