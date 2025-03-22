@@ -1,6 +1,6 @@
 
 .container {
-    min-height: 100vh;
+    min-height: 100dvh;
     justify-content: center;
 }
 
@@ -10,15 +10,9 @@
 }
 
 .child_2{
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
-.register_btn{
-    border-radius: 100px;
-    border: none;
-    width: fit-content;
-    padding: 10px 30px;
-}
 
 .topics_cont {
     display: flex;

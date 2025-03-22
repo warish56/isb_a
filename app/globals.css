@@ -1,65 +1,77 @@
-@layer typography, colors, util;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-
-  --color-text-primary: #0F0F0F;
-  --color-text-secondary: #FDFAF5;
-  --color-text-tertiary: #A8A8A8;
-
-  --color-accent-blue: #619BF7;  
-  --color-accent-yellow: #FFEDAF;
-  --color-accent-pink: #FFBABA;
-  --color-accent-orange: #EC5212;
-  --color-accent-green: #41B383;
-  --color-accent-dark-blue: #3658D3;
-  --color-accent-light-blue: #C0D7FC;
-  --color-accent-light-yellow: #FFF6DA;
-  --color-accent-light-pink: #A8A8A8;
-  --color-accent-light-orange: #F9CBB8;
-  --color-accent-light-green: #9FD8C0;
-  --color-accent-light-dark-blue: #ADBAEC;
-
-  --color-bg-light: #FFFFFF;
-  --color-bg-gray: #F2F2F2;
-  --color-bg-dark: #0F0F0F;
-
-  --gap-5: 5px;
-  --gap-10: 10px;
-  --gap-20: 20px;
-  --gap-30: 30px;
-  --gap-40: 40px;
-}
+@layer base, typography, colors, util;
 
 
-@font-face {
-  font-family: 'HeyWow';
-  src: url('/fonts/HeyWowRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
+@layer base{
 
-@media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
+  
+    --color-text-primary: #0F0F0F;
+    --color-text-secondary: #FDFAF5;
+    --color-text-tertiary: #A8A8A8;
+  
+    --color-accent-blue: #619BF7;  
+    --color-accent-yellow: #FFEDAF;
+    --color-accent-pink: #FFBABA;
+    --color-accent-orange: #EC5212;
+    --color-accent-green: #41B383;
+    --color-accent-dark-blue: #3658D3;
+    --color-accent-light-blue: #C0D7FC;
+    --color-accent-light-yellow: #FFF6DA;
+    --color-accent-light-pink: #A8A8A8;
+    --color-accent-light-orange: #F9CBB8;
+    --color-accent-light-green: #9FD8C0;
+    --color-accent-light-dark-blue: #ADBAEC;
+  
+    --color-bg-light: #FFFFFF;
+    --color-bg-gray: #F2F2F2;
+    --color-bg-dark: #0F0F0F;
+  
+    --gap-5: 5px;
+    --gap-10: 10px;
+    --gap-20: 20px;
+    --gap-30: 30px;
+    --gap-40: 40px;
   }
+  
+  
+  @font-face {
+    font-family: 'HeyWow';
+    src: url('/fonts/HeyWowRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  }
+  
+  html,
+  body {
+    /* height: 100dvh;
+    overflow: scroll; */
+    font-family: 'Heavywow', sans-serif;
+  }
+
+  button{
+    cursor: pointer;
+  }
+  
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
 }
 
-html,
-body {
-  height: 100dvh;
-  overflow: scroll;
-  font-family: 'Heavywow', sans-serif;
-}
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
 
 
 @layer colors {
@@ -137,6 +149,18 @@ body {
    .bg-accent-yellow{
     background-color: var(--color-accent-yellow);
    }
+   .bg-light-orange{
+    background-color: var(--color-accent-light-orange);
+   }
+   .bg-light-green{
+    background-color: var(--color-accent-light-green);
+   }
+   .bg-light-dark-blue{
+    background-color: var(--color-accent-light-dark-blue);
+   }
+   .bg-dark-blue{
+    background-color: var(--color-accent-dark-blue);
+   }
 
    .bg-dark{
     background-color: var(--color-bg-dark);
@@ -195,6 +219,23 @@ body {
   .no-margin{
     margin: 0;
   }
+  .ml-auto{
+    margin-left: auto;
+  }
+  .mt-auto{
+    margin-top: auto;
+  }
+  .mr-auto{
+    margin-right: auto;
+  }
+
+  .align-self-start{
+    align-self: flex-start;
+  }
+
+  .align-self-end{
+    align-self: flex-end;
+  }
 
   .uppercase {
     text-transform: uppercase;
@@ -206,6 +247,10 @@ body {
 
   .text-center{
     text-align: center;
+  }
+
+  .text-right{
+    text-align: right;
   }
 
   .bold {
@@ -409,7 +454,7 @@ body {
 
   .text-body-1{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
 
     @media (min-width:700px) {
         font-size: 20px;
@@ -423,7 +468,7 @@ body {
 
   .text-body-2{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
 
     @media (min-width:700px) {
         font-size: 20px;
@@ -437,7 +482,7 @@ body {
 
   .text-body-3{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
 
     @media (min-width:700px) {
         font-size: 14px;

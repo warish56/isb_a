@@ -1,0 +1,42 @@
+
+.container{
+    min-height: 100dvh;
+}
+
+.content{
+    padding:80px 40px;
+    border-radius: 50px;
+
+    @media (min-width: 1000px) {
+        padding: 60px;
+    }
+}
+
+.text{
+    order:2;
+
+    @media (min-width: 1000px) {
+        order:1;
+        max-width: 70%;
+    }
+}
+
+.icon{
+    order:1;
+
+    @media (min-width: 1000px) {
+        order:2;
+    }
+    
+    & svg{
+        width: 116px;
+
+        @media (min-width: 700px) {
+            width: 154px;
+        }
+
+        @media (min-width: 1400px) {
+            width: 237px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+.container{
+    min-height: 100dvh;
+    border-top-right-radius: 100px;
+
+    @media (min-width:700px) {
+        border-top-right-radius: 150px;
+    }
+    @media (min-width:1000px) {
+        border-top-right-radius: 200px;
+    }
+
+    @media (min-width:1400px) {
+        border-top-right-radius: 300px;
+    }
+
+}
+
+.content{
+    margin: 100px 0;
+}
+
+
+
+.form_cont{
+    max-width: 664px;
+    width: 100%;
+}

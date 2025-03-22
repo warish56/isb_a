@@ -1,0 +1,29 @@
+
+.container{
+    min-height: 100dvh;
+}
+
+.content{
+    background-image: url("../../assets//back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100dvh;
+
+    border-bottom-left-radius: 250px;
+
+    @media (min-width: 1000px) {
+        border-bottom-left-radius: 500px;
+    }
+}
+
+.text{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    max-width: 70%;
+    margin-left: auto;
+
+    @media (min-width: 1400px) {
+        max-width: 60%;
+    }
+}

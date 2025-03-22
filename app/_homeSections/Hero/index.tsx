@@ -1,4 +1,5 @@
 
+import { RegisterButton } from '@/app/_components/Buttons/Register';
 import styles from './style.module.css';
 
 
@@ -41,11 +42,17 @@ export const HeroSection = () => {
 
                         <div className={`${styles.child_2} gap-10 column-center`}>
                             <span className="text-body-1 color-text-primary">The challenge is now open!</span>
-                            <button className={`${styles.register_btn} bg-dark text-btn-2 color-text-secondary`}>Register Now</button>
+                            <RegisterButton />
                         </div>
                         
                     </div>
 
+
+                </div>
+            </div>
+
+            <div className='body-wrapper'>
+                <div className='column-center body-wrapper-content'>
                     <div className={`${styles.topics_cont} body-wrapper-content`}>
                         <Topic clasNames={styles.topic_1} count={4} title='Weeks'  title_part="Topics"  cta='Learn'/>
                         <Topic clasNames={styles.topic_2} title='Win INR 15L+ Cash Prize' cta='Compete'/>
