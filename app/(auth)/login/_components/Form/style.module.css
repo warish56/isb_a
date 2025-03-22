@@ -1,0 +1,9 @@
+
+
+.cont{
+    margin: 0px 0;
+
+    @media (min-width: 1400px) {
+        margin: 20px 0;
+    }
+}

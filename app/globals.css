@@ -161,6 +161,9 @@
    .bg-dark-blue{
     background-color: var(--color-accent-dark-blue);
    }
+   .bg-accent-blue{
+    background-color: var(--color-accent-blue);
+   }
 
    .bg-dark{
     background-color: var(--color-bg-dark);
@@ -265,6 +268,10 @@
     justify-content: space-around;
   }
 
+  .row-end{
+    justify-content: flex-end;
+  }
+
   .align-center{
     align-items:center;
   }
@@ -293,6 +300,14 @@
     width: 100%;
   }
 
+  .mb-10{
+    margin-block: 10px;
+  }
+
+  .mb-20{
+    margin-block: 20px;
+  }
+
   .pb-20{
     padding-block: 20px;
   }
@@ -306,6 +321,10 @@
     @media (min-width:700px){
       display: unset;
     }
+  }
+
+  .no-underline{
+    text-decoration: none;
   }
 
 }

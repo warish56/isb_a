@@ -14,7 +14,9 @@ export const Navbar = () => {
                 <div className={` row align-center space-between`}>
 
                     <div className={`${styles.brand_logo}`}>
+                        <Link href={'/'}>
                         <BrandSvg />
+                        </Link>
                     </div>
 
                     <div className={` ${styles.link_grp} row align-center gap-10 bg-gray`}>
@@ -23,9 +25,11 @@ export const Navbar = () => {
                         <a className={`${styles.link} text-menu color-text-primary`}>FAQs</a>
                     </div>
 
-                    <button className={`${styles.register_btn} text-menu-button color-text-secondary`}>
-                        Register Now
-                    </button>
+                    <Link href="/login">
+                        <button className={`${styles.register_btn} text-menu-button color-text-secondary`}>
+                            Register Now
+                        </button>
+                    </Link>
                 </div>
             </div>
         </nav>

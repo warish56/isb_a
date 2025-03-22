@@ -1,5 +1,4 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+
 import { HeroSection } from "./_homeSections/Hero";
 import { LadderA } from "./_homeSections/ladderA";
 import { LadderB } from "./_homeSections/ladderB";

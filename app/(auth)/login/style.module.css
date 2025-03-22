@@ -1,0 +1,18 @@
+
+.container {
+    min-height: 100dvh;
+}
+
+.text_cont{
+    border-bottom: 1px var(--color-text-tertiary) solid;
+    padding-bottom: 30px;
+}
+
+.line{
+    border-bottom: 1px var(--color-text-tertiary) solid;
+}
+
+
+.content{
+    max-width: min(80%, 400px);
+}

@@ -1,5 +1,5 @@
 
-import { RegisterButton } from '@/app/_components/Buttons/Register';
+import { RegisterButton } from '../../_components/Buttons/Register';
 import styles from './style.module.css';
 
 

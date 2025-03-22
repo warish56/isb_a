@@ -1,5 +1,5 @@
 
-import { RegisterButton } from '@/app/_components/Buttons/Register'
+import { RegisterButton } from '@/app/(marketing)/_components/Buttons/Register'
 import styles from './style.module.css'
 
 export const Hero = () => {

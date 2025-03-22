@@ -1,0 +1,24 @@
+
+.container {
+
+    border-radius: 10px;
+    border: 1px var(--color-text-tertiary) solid;
+    overflow: hidden;
+
+    &:focus-within{
+        outline: 2px var(--color-accent-dark-blue) solid;
+    }
+
+
+    & input {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        padding: 16px 10px;
+
+        &::placeholder {
+            color: var(--color-text-tertiary);
+        }
+    }
+    
+}
