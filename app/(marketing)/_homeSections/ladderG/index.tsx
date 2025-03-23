@@ -13,7 +13,7 @@ const Company = ({name}:CompanyProps) => {
             <div className={`${styles.comapny_name} row-center`}>
                 <span className='text-head-6'>{name.charAt(0).toUpperCase()}</span>
             </div>
-            <span className='text-head-3 color-text-primary'>{name}</span>
+            <span className='text-head-4 color-text-primary'>{name}</span>
         </div>
     )
 }

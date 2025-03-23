@@ -1,0 +1,18 @@
+
+.container{
+    min-height: 100dvh;
+    margin-block: 100px;
+}
+
+.item{
+    border-radius: 20px;
+    padding: 30px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: min(80%, 300px);
+    max-width: 500px;
+}
+
+.item_desc{
+    margin-top: 100px;
+}

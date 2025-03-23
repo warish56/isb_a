@@ -1,7 +1,7 @@
 
 import styles from './style.module.css';
 
-import LadderSvg from '../assets/ladder/second.svg'
+import LadderSvg from '../assets/ladder/step_2.svg'
 
 import CyberSvg from '../assets/topics/cyber.svg'
 import IotSvg from '../assets/topics/iot.svg'
@@ -20,7 +20,7 @@ type topicProps = {
 const Topic = ({title, description, img, classNames=''}:topicProps) => {
     return (
         <div className={`${classNames} ${styles.topic} column gap-10`}>
-            <span className='text-head-3 color-text-primary'>{title}</span>
+            <span className='text-head-4 color-text-primary'>{title}</span>
                 {img}
             <span className='text-body-3 color-text-primary'>{description}</span>
         </div>
@@ -30,8 +30,8 @@ const Topic = ({title, description, img, classNames=''}:topicProps) => {
 
 export const LadderB = () => {
     return (
-        <section className={`${styles.container} body-wrapper`}>
-            <div className={`${styles.content} body-wrapper-content`}>
+        <section className={`${styles.container}`}>
+            <div className={`${styles.content}`}>
                 <div className={styles.back}>
                     <LadderSvg/>
                 </div>

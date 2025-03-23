@@ -11,7 +11,7 @@ const BoardLink = ({url, text, icon, classNames}:{text:string, url:string, icon:
     return (
         <div className={`${styles.link_item} row align-center gap-10`}>
             <span className={`${styles.link_icon}`}>{icon}</span>
-            <a href={url} target='_blank' className={`text-head-3 ${classNames}`}>{text}</a>
+            <a href={url} target='_blank' className={`text-head-4 ${classNames}`}>{text}</a>
         </div>
     )
 }

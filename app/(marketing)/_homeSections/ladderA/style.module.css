@@ -3,7 +3,8 @@
 
 
 .container {
-    
+    max-width: 1000px;
+    padding: 20px;
 }
 .content {
     position: relative;
@@ -13,7 +14,7 @@
 .topic_cont{
     position: absolute;
     right:0px;
-    top: 40%;
+    top: 30%;
     z-index: 0;
     max-width: 266px;
 
@@ -23,6 +24,11 @@
 
     @media (min-width: 1000px){
         max-width: 600px;
+    }
+    
+    @media (min-width: 1000px){
+        top: 35%;
+        right:10%;
     }
 }
 

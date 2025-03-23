@@ -28,9 +28,9 @@ export const Navbar = () => {
                     </div>
 
                     <div className={` ${styles.link_grp} row align-center gap-10 bg-gray`}>
-                        <Link href="/vision" className={`${styles.link} ${getActiveClass('/vision')} text-menu color-text-primary`}>Our Vision</Link>
-                        <Link href="/awards"className={`${styles.link} ${getActiveClass('/awards')} text-menu color-text-primary`}>Awards</Link>
-                        <Link href="#faq" className={`${styles.link} ${getActiveClass('/faq')}text-menu color-text-primary`}>FAQs</Link>
+                        <Link href="/vision" className={`${styles.link} ${getActiveClass('/vision')} row-center  text-menu color-text-primary`}>Our Vision</Link>
+                        <Link href="/awards"className={`${styles.link} ${getActiveClass('/awards')}  row-center  text-menu color-text-primary`}>Awards</Link>
+                        <Link href="#faq" className={`${styles.link} ${getActiveClass('/faq')}  row-center  text-menu color-text-primary`}>FAQs</Link>
                     </div>
 
                     <Link href="/login">

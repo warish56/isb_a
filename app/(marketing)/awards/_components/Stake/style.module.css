@@ -1,0 +1,46 @@
+
+.container{
+    min-height: 100dvh;
+}
+.item_cont{
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+}
+
+.mw{
+    display: flex;
+    @media (min-width:1000px) {
+        opacity: 0;
+        height: 200px;
+    }
+}
+
+.wd{
+    display: none;
+    transform: translateY(-200px);
+    @media (min-width:1000px) {
+        display: flex;
+    }
+}
+
+.icon{
+    max-width: 340px;
+    width: 160px;
+}
+
+.wd .icon{
+    width: 340px;
+}
+
+.mw .icon{
+    width: 250px;
+}
+
+.trophy_cont{
+    margin-top: 0px;
+    /* @media (min-width:1000px) {
+        margin-top: 300px;
+    } */
+}

@@ -1,7 +1,9 @@
 
 
 .container {
-    /* min-height: 100vh; */
+    max-width: 1000px;
+    margin-right: auto;
+    padding: 20px;
 }
 .content {
     position: relative;
@@ -18,17 +20,17 @@
 
 .topic_cont{
     position: absolute;
-    bottom: -2%;
+    top: -10%;
     left: 0px;
     z-index: 0;
 
-    @media(min-width: 700px){
+    /* @media(min-width: 700px){
         bottom: 10%;
     }
 
     @media(min-width: 1000px){
         bottom: 5%;
-    }
+    } */
 }
 
 .topic_content{
@@ -44,6 +46,7 @@
     scroll-snap-type: x mandatory;
 
     @media (min-width: 700px){
+        overflow: visible;
         grid-template-columns: repeat(2, minmax(200px, 250px));
         grid-template-rows: 250px 250px;
         max-width: 100%;

@@ -8,7 +8,7 @@ import LadderLongSvg from '../assets/ladder/long_third.svg'
 const BoardItem = ({text,bg}:{text:string; bg:string;}) => {
     return (
         <div className={`${styles.board_item} row-center uppercase`} style={{backgroundColor:bg}}>
-            <span className="text-btn-2 color-text-primary">{text}</span>
+            <span className="text-btn-3 color-text-primary">{text}</span>
         </div>
     )
 }
@@ -25,7 +25,7 @@ const Plan = ()=> {
             <div className={`${styles.first_web} column gap-10`}>
                 <div className={styles.blackboard}>
                     <div className='column gap-10 text-center'>
-                        <span className='accent-yellow'>Build your Dream Team</span>
+                        <span className='accent-yellow text-body-1'>Build your Dream Team</span>
                         <span className='text-light'>Let’s test your dragging skills</span>
                     </div>
                     

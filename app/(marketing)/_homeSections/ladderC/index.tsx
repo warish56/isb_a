@@ -1,8 +1,8 @@
 
 import styles from './style.module.css';
 
-import LadderSvg from '../assets/ladder/third.svg'
-import LadderLongSvg from '../assets/ladder/long_first.svg'
+import LadderSvg from '../assets/ladder/step_3.svg'
+import LadderLongSvg from '../assets/ladder/step_3_long.svg'
 
 import NovemberSvg from '../assets/calendar/nov.svg'
 

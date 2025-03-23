@@ -1,18 +1,17 @@
 import { KnowMore } from "../_components/KnowMore";
-import { DrivesUs } from "./_components/DrivesUs";
+import { Beyond } from "./_components/Beyond";
 import { Hero } from "./_components/Hero";
-import { Impact } from "./_components/Impact";
-import { Minds } from "./_components/Minds";
-
+import { Medals } from "./_components/Medals";
+import { Stake } from "./_components/Stake";
 
 export default function Page(){
 
     return (
         <main>
             <Hero/>
-            <DrivesUs />
-            <Minds/>
-            <Impact/>
+            <Stake/>
+            <Medals/>
+            <Beyond/>
             <KnowMore/>
         </main>
     )
