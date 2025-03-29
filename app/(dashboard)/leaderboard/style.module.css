@@ -1,0 +1,150 @@
+
+
+.table_grid{
+    display: grid;
+    grid-template-columns: [pad-left-start] 10px [row-1-start] 30px [row-1-end row-2-start] 2fr  [row-2-end row-3-start] 50px [row-3-end row-4-start] 50px [row-4-end row-5-start] 50px [row-5-end row-6-start] 2fr [row-6-end row-7-start] 1fr [row-7-end];
+
+    @media (min-width: 700px) {
+        &{
+            grid-template-columns: [pad-left-start] 10px [row-1-start] 50px [row-1-end row-2-start] 2fr  [row-2-end row-3-start] 80px [row-3-end row-4-start] 80px [row-4-end row-5-start] 80px [row-5-end row-6-start] 1fr [row-6-end row-7-start] 1fr [row-7-end];
+        }
+    }
+    
+    
+    @media (min-width: 1000px) {
+        &{
+            grid-template-columns: [pad-left-start] 10px [row-1-start] 100px [row-1-end row-2-start] 2fr  [row-2-end row-3-start] 130px [row-3-end row-4-start] 130px [row-4-end row-5-start] 130px [row-5-end row-6-start] 2fr [row-6-end row-7-start] 1fr [row-7-end];
+        }
+    }
+    
+
+}
+
+
+
+
+.padd{
+    padding: 5px 10px;
+
+    @media (min-width: 700px) {
+        &{
+            padding: 10px 20px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        &{
+            padding: 15px 50px;
+        }
+    }
+}
+
+
+.center{
+    justify-content: center;
+    align-content: center;
+}
+
+.self_center{
+    justify-self: center;
+    align-self: center;
+}
+
+.row_1{
+    grid-column: row-1-start/row-1-end ;
+}
+.row_2{
+    grid-column: row-2-start/row-2-end ;
+}
+
+
+.row_3{
+    grid-column: row-3-start/row-3-end ;
+}
+.row_4{
+    grid-column: row-4-start/row-4-end ;
+}
+.row_5{
+    grid-column: row-5-start/row-5-end ;
+}
+.row_6{
+    grid-column: row-6-start/row-6-end ;
+}
+
+
+.row_7{
+    grid-column: row-7-start/row-7-end ;
+}
+
+
+
+.user_icon{
+    width: 20px;
+    aspect-ratio: 1/1;
+
+    & span{
+        font-size: 18px;
+    }
+
+
+    @media (min-width: 700px) {
+        &{
+            width: 30px;
+            height: 30px;
+        }
+        & span{
+            font-size: 16px;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        &{
+            width: 40px;
+        }
+        & span{
+            font-size: 17px;
+        }
+    }
+}
+
+.lead_item{
+    border-radius: 100px;
+}
+
+.crown_cont{
+    position: relative;
+    isolation: isolate;
+
+    justify-self: center;
+    align-self: center;
+
+    @media (min-width: 700px) {
+        &{
+            width: 41px;
+            height: 27px;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        &{
+            width: 58px;
+            height: 38px;
+        }
+    }
+}
+
+.crown_text{
+    position: absolute;
+    inset: 0;
+}
+
+.trophy_cont{
+    display: none;
+
+    @media (min-width: 1400px) {
+        &{
+            display: block;
+        }
+    }
+
+}

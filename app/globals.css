@@ -157,6 +157,10 @@
    .bg-light-orange{
     background-color: var(--color-accent-light-orange);
    }
+
+   .bg-light-blue{
+    background-color: var(--color-accent-light-blue);
+   }
    .bg-light-green{
     background-color: var(--color-accent-light-green);
    }
