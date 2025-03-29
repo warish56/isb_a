@@ -28,6 +28,8 @@
     --color-bg-light: #FFFFFF;
     --color-bg-gray: #F2F2F2;
     --color-bg-dark: #0F0F0F;
+
+    --navbar-height: 100px;
   
     --gap-5: 5px;
     --gap-10: 10px;
@@ -178,6 +180,10 @@
 
 @layer util{
 
+  .navbar-off{
+    margin-top: var(--navbar-height);
+  }
+
   .row{
     display: flex; 
   }
@@ -275,6 +281,11 @@
     justify-content: flex-end;
   }
 
+
+  .justify-center{
+    justify-content:center;
+  }
+
   .align-center{
     align-items:center;
   }
@@ -305,6 +316,10 @@
 
   .full-width{
     width: 100%;
+  }
+
+  .mbottom-20{
+    margin-bottom: 20px;
   }
 
   .mb-10{

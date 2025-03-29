@@ -1,0 +1,29 @@
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 1250px) {
+        grid-template-columns: 700px 1fr;
+        grid-column-gap: 20px;
+    }
+}
+
+
+.posts_cont{
+    order:2;
+    padding: 20px;
+    padding-left: 0;
+    @media (min-width: 1250px) {
+        order:1;
+    }
+}
+
+.profile_cont{
+    order:1;
+    padding: 20px;
+    padding-left: 0;
+    @media (min-width: 1250px) {
+        order:2;
+    }
+}

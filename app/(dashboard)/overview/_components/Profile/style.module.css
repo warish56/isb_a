@@ -1,0 +1,100 @@
+.container{
+    container-type: inline-size;
+    container-name: container;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+@container container (min-width: 400px){
+
+    .content{
+        flex-direction: column;
+    }
+}
+
+.info_cont{
+    background-color: #BCD4F9;
+    border-radius: 20px;
+    container-type: inline-size;
+    container-name: info;
+    padding: 20px;
+}
+
+.info_content{
+    align-items: center;
+}
+
+.avatar_cont{
+    width: 96px;
+}
+
+@container info (min-width: 500px){
+
+    .info_content{
+        flex-direction: row;
+    }
+
+    .avatar_cont{
+        width: 156px;
+    }
+
+}
+
+.points_cont{
+    border-radius: 20px;
+    container-type: inline-size;
+    container-name: point;
+    padding: 20px;
+}
+
+
+.point_left{
+    border-bottom: 1px var(--color-text-tertiary) solid;
+}
+
+@container point (min-width: 500px){
+
+    .points_content{
+        flex-direction: row;
+    }
+
+    .point_left{
+        border-bottom: none;
+        border-right: 1px var(--color-text-tertiary) solid;
+    }
+
+}
+
+.refer_cont{
+    border: 2px var(--color-accent-yellow) solid;
+    border-radius: 20px;
+    padding: 20px;
+
+    & .refer_id_box{
+        border-radius: 10px;
+        padding: 10px;
+        max-width: 170px;
+    }
+}
+
+
+
+
+.nav_top{
+    height: var(--navbar-height);
+    display: block;
+}
+
+@media (min-width: 1250px) {
+    .head{
+        display: none;
+    }
+
+    /* .nav_top{
+        display: block;
+    } */
+}
